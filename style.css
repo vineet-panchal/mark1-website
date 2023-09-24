@@ -1,0 +1,1920 @@
+:root {
+    --navbar-grey: rgb(59, 61, 64);
+    --red-design: #c4133d;
+    --blue-design: #161a82;
+    --purple-design: #77165b;
+    --resume-design1: #ffffff;
+    --resume-design2: #f3f0f4;
+    --resume-design3: #ded8e9;
+    --resume-design4: #c3c2e2;
+    --resume-design5: #a3b1dc;
+    --hashtag-color: #4c4c4d;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*
+
+NAVBAR
+STYLING
+
+*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    font-family: 'Source Code Pro', monospace;
+    background-color: white;
+}
+
+.navbar-title { 
+    color: black;
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-weight: 100%;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.navbar-links { 
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    font-size: 12px;
+}
+
+.navbar-links li { 
+    list-style: none;
+}
+
+.navbar-links a { 
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: black;
+    font-weight: bold;
+    padding: 6px 15px;
+    margin-left: 30px;
+}
+
+.navbar-lines-container { 
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-lines-container div { 
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+.btn-1, .btn-2, .btn-3, .btn-4, .btn-5 {
+    color: black;
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+
+.btn-1:hover, .btn-2:hover, .btn-3:hover, .btn-4:hover, .btn-5:hover {
+    letter-spacing: 3px;
+    background-color: var(--red-design);
+    color: black;
+    box-shadow: var(--purple-design) 0px 7px 29px 0px;
+}
+
+.btn-1:active, .btn-2:active, .btn-3:active, .btn-4:active, .btn-5:active {
+    letter-spacing: 3px;
+    background-color: var(--red-design);
+    color: black;
+    box-shadow: var(--purple-design) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+/*
+
+END
+OF
+NAVBAR
+STYLING
+
+*/
+
+/*
+
+OBJECTIVE
+STYLING
+
+*/
+
+.nav-home-container {
+    background-color: var(--resume-design1);
+}
+
+.objective-container {
+    min-height: 30vh;
+    width: 100%;
+    position: relative;
+    top: 150px;
+}
+
+.objective-title {
+    display: inline;
+    position: relative;
+    left: 80px;
+    top: -50px;
+    margin-top: 150px;
+    font-size: 60px;
+    word-spacing: 4px;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none solid black;
+    /* font-style: italic; */
+    font-variant: small-caps;
+}
+
+.objective-logo {
+    position: relative;
+    top: -45px;
+    left: -200px;
+}
+
+.objective-writing {
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    word-spacing: 4px;
+    color: black;
+    font-weight: 400;
+    text-decoration: none solid black;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: -20px;
+}
+
+/*
+
+END
+OF
+OBJECTIVE
+STYLING
+
+*/
+
+/*
+
+EDUCATION
+STYLING
+
+*/
+
+.education-container {
+    height: 160vh;
+    width: 100%;
+    background-color: var(--resume-design2);
+    position: relative;
+}
+
+.education-title {
+    display: inline;
+    position: relative;
+    left: 80px;
+    top: 30px;
+    margin-top: 150px;
+    font-size: 60px;
+    word-spacing: 4px;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none solid black;;
+    /* font-style: italic; */
+    font-variant: small-caps;
+}
+
+.education-logo {
+    position: relative;
+    top: 30px;
+    left: -210px;
+}
+
+.ryerson-left {
+    background-color: var(--resume-design2);
+    color: black;
+    width: 40%;
+    float: left;
+    height: 80vh;
+}
+
+.ryerson-title {
+    font-family: 'Gloock', serif;
+    font-size: 30px;
+    margin-top: 80px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-style: normal;
+    font-variant: normal;
+    color: var(--purple-design);
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.ryerson-level {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ryerson-writing {
+    font-size: 20px;
+    top: 100px;
+    margin-top: 50px;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+    text-transform: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-variant: normal;
+    text-decoration: none solid black;
+    word-spacing: 4px;
+    text-align: center;
+}
+
+.ryerson-subheading {
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2.5px;
+    word-spacing: 4px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.ryerson-right {
+    background-image: url(images/ryerson.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 60%;
+    height: 80vh;
+    float: right;
+    margin-top: 0;
+}
+
+.ryerson-hashtag {
+    position: relative;
+    left: 70%;
+    font-family: 'Skranji', cursive;
+    opacity: 0.7;
+    color: var(--hashtag-color);
+    font-size: 60px;
+}
+
+.pope-left {
+    background-image: url(images/pope.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    float: left;
+    margin-top: 0;
+}
+
+.pope-hashtag {
+    position: relative;
+    font-family: 'Skranji', cursive;
+    opacity: 0.7;
+    color: var(--hashtag-color);
+    font-size: 60px;
+}
+
+.pope-right {
+    background-color: var(--resume-design2);
+    color: black;
+    width: 50%;
+    float: right;
+    height: 80vh;
+}
+
+.pope-title {
+    font-family: 'Gloock', serif;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-right: 5px;
+    margin-left: 10px;
+    font-style: normal;
+    font-variant: normal;
+    color: var(--purple-design);
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.pope-level {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pope-subheading {
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2.5px;
+    word-spacing: 4px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.pope-writing {
+    font-size: 20px;
+    top: 100px;
+    margin-top: 50px;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+    text-transform: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-variant: normal;
+    text-decoration: none solid black;
+    word-spacing: 4px;
+    text-align: center;
+}
+
+/*
+
+END
+OF
+EDUCATION
+STYLING
+
+*/
+
+/*
+
+SKILLS
+STYLING
+
+*/
+
+
+.skills-container {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    background: var(--resume-design3);
+}
+
+.skills-title {
+    display: inline;
+    position: relative;
+    left: 80px;
+    top: 30px;
+    margin-top: 150px;
+    font-size: 60px;
+    word-spacing: 4px;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none solid black;;
+    /* font-style: italic; */
+    font-variant: small-caps;
+}
+
+.skills-logo {
+    position: relative;
+    top: 35px;
+    left: -120px;
+}
+
+.skills-title1, .skills-title2, .skills-title3 {
+    font-family: 'Gloock', serif;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-right: 5px;
+    margin-left: 10px;
+    font-style: normal;
+    font-variant: normal;
+    color: var(--purple-design);
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-decoration: none;
+    text-transform: none;
+    display: inline-block;
+}
+
+.skills-writing {
+    display: inline-block;
+    font-size: 20px;
+    top: 100px;
+    margin-top: 50px;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+    text-transform: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-variant: normal;
+    text-decoration: none solid black;
+    word-spacing: 4px;
+    text-align: center;
+}
+
+/*
+
+END
+OF
+SKILLS
+STYLING
+
+*/
+
+/*
+
+PROJECTS
+STYLING
+
+*/
+
+.projects-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--resume-design4);
+}
+
+.projects-heading-container {
+    height: 10vh;
+    background: var(--resume-design4);
+    width: 100%;
+}
+
+.projects-title {
+    display: inline;
+    position: relative;
+    left: 80px;
+    top: 30px;
+    margin-top: 150px;
+    font-size: 60px;
+    word-spacing: 4px;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none solid black;;
+    /* font-style: italic; */
+    font-variant: small-caps;
+}
+
+.projects-logo {
+    position: relative;
+    top: 35px;
+    left: -180px;
+}
+
+
+.projects-timewise-title, .projects-moviesnet-title, .projects-minesweeper-title, .projects-school-title, .projects-poker-title {
+    font-family: 'Gloock', serif;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-right: 5px;
+    margin-left: 10px;
+    font-style: normal;
+    font-variant: normal;
+    color: var(--purple-design);
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-decoration: none;
+    text-transform: none;
+    display: inline-block;
+}
+/* 
+.timewise-link, .moviesnet-link, .minesweeper-link, .school-link, .poker-link {
+
+} */
+
+.projects-timewise-writeup, .projects-moviesnet-writeup, .projects-minesweeper-writeup, .projects-school-writeup, .projects-poker-writeup {
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 20px;
+    top: 100px;
+    margin-top: 50px;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+    text-transform: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-variant: normal;
+    text-decoration: none solid black;
+    word-spacing: 4px;
+    text-align: center;
+}
+
+.projects-line {
+    color: black;
+    background-color: black;
+    width: 100%;
+}
+
+/*
+
+END
+OF
+PROJECTS
+STYLING
+
+*/
+
+
+/*
+
+EXPERIENCE
+STYLING
+
+*/
+
+.experience-container {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background-color: var(--resume-design5);
+}
+
+.experience-heading-container {
+    height: 0;
+}
+
+.experience-title {
+    display: inline;
+    position: relative;
+    left: 80px;
+    top: 30px;
+    margin-top: 150px;
+    font-size: 60px;
+    word-spacing: 4px;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none solid black;;
+    /* font-style: italic; */
+    font-variant: small-caps;
+}
+
+.experience-logo {
+    position: relative;
+    top: 35px;
+    left: -250px;
+}
+
+
+.timeline-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 10000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline ul {
+    list-style: none;
+}
+
+.timeline ul li {
+    padding: 20px;
+    background-color: #1e1f22;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.timeline ul li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.timeline-content .date {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: black;
+}
+
+@media only screen and (min-width: 768px) {
+    .timeline:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: gray;
+    }
+    .timeline ul li {
+        width: 50%;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+    .timeline ul li::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: gray;
+        top: 0px;
+    }
+    .timeline ul li:nth-child(odd)::before {
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
+    .timeline ul li:nth-child(even)::before {
+        transform: translate(-50%, -50%);
+        left: -30px;
+    }
+    .timeline-content .date {
+        position: absolute;
+        top: -30px;
+    }
+    .timeline ul li:hover::before {
+        background-color: white;
+    }
+}
+
+/*
+
+END
+OF
+EXPERIENCE
+STYLING
+
+*/
+
+/*
+
+CONTACT
+STYLING
+
+*/
+
+.contact-container {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    color: white;
+    background: black;
+}
+
+.contact-title {
+    display: inline;
+    position: relative;
+    left: 80px;
+    top: 10px;
+    font-size: 60px;
+    word-spacing: 4px;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none solid black;
+    font-variant: small-caps;
+}
+
+.contact-logo {
+    position: relative;
+    top: 15px;
+    left: -170px;
+}
+
+.contact-content-container {
+    position: relative;
+    justify-content: center;
+}
+
+.contact-name {
+    font-family: 'Gloock', serif;
+    font-size: 30px;
+    text-align: center;
+    font-style: normal;
+    font-variant: normal;
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.contact-subheading {
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+}
+
+.github {
+    height: 80px;
+    width: auto;
+}
+
+.linkedin {
+    height: 80px;
+    width: auto;
+}
+
+.email {
+    height: 80px;
+    width: auto;
+}
+
+.content-icons {
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*
+
+END
+OF
+CONTACT
+STYLING
+
+*/
+
+/*
+
+RESPONSIVENESS
+
+*/
+
+@media screen and (max-width: 1900px) and (min-width: 1200px) {
+
+    /*
+    
+    OBJECTIVE
+    (MAX-WIDTH:1900PX) & (MIN-WIDTH:1200PX)
+    
+    */
+        
+    .nav-home-container {
+        background-color: var(--resume-design1);
+    }
+
+    .objective-container {
+        min-height: 40vh;
+        width: 100%;
+        position: relative;
+        top: 150px;
+    }
+
+    .objective-title {
+        display: inline;
+        position: relative;
+        left: 80px;
+        top: -50px;
+        margin-top: 150px;
+        font-size: 60px;
+        word-spacing: 4px;
+        font-family: 'Caveat', cursive;
+        letter-spacing: 5px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none solid black;
+        /* font-style: italic; */
+        font-variant: small-caps;
+    }
+
+    .objective-logo {
+        position: relative;
+        top: -45px;
+        left: -200px;
+    }
+
+    .objective-writing {
+        position: relative;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        letter-spacing: 2.5px;
+        word-spacing: 4px;
+        color: black;
+        font-weight: 400;
+        text-decoration: none solid black;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: -20px;
+    }
+
+    /*
+
+    END
+    OF
+    OBJECTIVE
+    (MAX-WIDTH:1900PX) & (MIN-WIDTH:1200PX)
+
+    */
+
+    /*
+
+    EDUCATION
+    (MAX-WIDTH:1900PX) & (MIN-WIDTH:1200PX)
+
+    */
+
+    .education-container {
+        height: 200vh;
+        width: 100%;
+        background-color: var(--resume-design2);
+        position: relative;
+    }
+
+    .education-title {
+        display: inline;
+        position: relative;
+        left: 80px;
+        top: 30px;
+        margin-top: 150px;
+        font-size: 60px;
+        word-spacing: 4px;
+        letter-spacing: 5px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none solid black;;
+        font-variant: small-caps;
+    }
+
+    .education-logo {
+        position: relative;
+        top: 30px;
+        left: -210px;
+    }
+
+    .ryerson-left {
+        background-color: var(--resume-design2);
+        color: black;
+        width: 50%;
+        float: left;
+        height: 100vh;
+    }
+
+    .ryerson-title {
+        font-size: 30px;
+        margin-top: 80px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-style: normal;
+        font-variant: normal;
+        color: var(--purple-design);
+        letter-spacing: 3px;
+        word-spacing: 4px;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    .ryerson-level {
+        font-style: italic;
+        opacity: 0.6;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .ryerson-writing {
+        font-size: 20px;
+        top: 100px;
+        margin-top: 50px;
+        letter-spacing: 2.5px;
+        font-weight: 400;
+        font-style: italic;
+        text-decoration: none solid black;
+        word-spacing: 4px;
+        text-align: center;
+    }
+
+    .ryerson-subheading {
+        margin-left: 10px;
+        margin-top: 50px;
+        margin-right: 10px;
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        word-spacing: 4px;
+        font-style: normal;
+        font-variant: normal;
+    }
+
+    .ryerson-right {
+        background-image: url(images/ryerson.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        width: 50%;
+        height: 100vh;
+        float: right;
+        margin-top: 0;
+    }
+
+    .ryerson-hashtag {
+        position: relative;
+        left: 52%;
+        opacity: 0.7;
+        color: var(--hashtag-color);
+        font-size: 60px;
+    }
+
+    .pope-left {
+        background-image: url(images/pope.jpeg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        width: 50%;
+        height: 100vh;
+        float: left;
+        margin-top: 0;
+    }
+
+    .pope-hashtag {
+        position: relative;
+        font-family: 'Skranji', cursive;
+        opacity: 0.7;
+        color: var(--hashtag-color);
+        font-size: 60px;
+    }
+
+    .pope-right {
+        background-color: var(--resume-design2);
+        color: black;
+        width: 50%;
+        float: right;
+        height: 100vh;
+    }
+
+    .pope-title {
+        font-family: 'Gloock', serif;
+        font-size: 30px;
+        margin-top: 40px;
+        margin-right: 5px;
+        margin-left: 10px;
+        font-style: normal;
+        font-variant: normal;
+        color: var(--purple-design);
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    .pope-level {
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: italic;
+        opacity: 0.6;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .pope-subheading {
+        margin-left: 10px;
+        margin-top: 50px;
+        margin-right: 10px;
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        word-spacing: 4px;
+        font-style: normal;
+        font-variant: normal;
+    }
+
+    .pope-writing {
+        font-size: 20px;
+        top: 100px;
+        margin-top: 50px;
+        letter-spacing: 2.5px;
+        font-weight: 400;
+        text-transform: none;
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: italic;
+        font-variant: normal;
+        text-decoration: none solid black;
+        word-spacing: 4px;
+        text-align: center;
+    }
+
+    /*
+
+    END
+    OF
+    EDUCATION
+    (MAX-WIDTH:1900PX) & (MIN-WIDTH:1200PX)
+
+    */
+
+    /*
+
+    SKILLS
+    (MAX-WIDTH:1900PX) & (MIN-WIDTH:1200PX)
+
+    */
+
+
+    .skills-container {
+        position: relative;
+        width: 100%;
+        height: 45vh;
+        background: var(--resume-design3);
+    }
+
+    .skills-title {
+        display: inline;
+        position: relative;
+        left: 80px;
+        top: 30px;
+        margin-top: 150px;
+        font-size: 60px;
+        word-spacing: 4px;
+        font-family: 'Caveat', cursive;
+        letter-spacing: 5px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none solid black;;
+        /* font-style: italic; */
+        font-variant: small-caps;
+    }
+
+    .skills-logo {
+        position: relative;
+        top: 35px;
+        left: -120px;
+    }
+
+    .skills-title1, .skills-title2, .skills-title3 {
+        font-family: 'Gloock', serif;
+        font-size: 30px;
+        margin-top: 40px;
+        margin-right: 5px;
+        margin-left: 10px;
+        font-style: normal;
+        font-variant: normal;
+        color: var(--purple-design);
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-decoration: none;
+        text-transform: none;
+        display: inline-block;
+    }
+
+    .skills-writing {
+        display: inline-block;
+        font-size: 20px;
+        top: 100px;
+        margin-top: 50px;
+        letter-spacing: 2.5px;
+        font-weight: 400;
+        text-transform: none;
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: italic;
+        font-variant: normal;
+        text-decoration: none solid black;
+        word-spacing: 4px;
+        text-align: center;
+    }
+
+    /*
+
+    END
+    OF
+    SKILLS
+    (MAX-WIDTH:1900PX) & (MIN-WIDTH:1200PX)
+
+    */
+
+    /*
+
+    PROJECTS
+    (MAX-WIDTH:1900PX) & (MIN-WIDTH:1200PX)
+
+    */
+
+    .projects-container {
+        position: relative;
+        width: 100%;
+        height: 110vh;
+        background: var(--resume-design4);
+    }
+
+    .projects-title {
+        display: inline;
+        position: relative;
+        left: 80px;
+        top: 30px;
+        margin-top: 150px;
+        font-size: 60px;
+        word-spacing: 4px;
+        font-family: 'Caveat', cursive;
+        letter-spacing: 5px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none solid black;;
+        /* font-style: italic; */
+        font-variant: small-caps;
+    }
+
+    .projects-logo {
+        position: relative;
+        top: 35px;
+        left: -180px;
+    }
+    
+    .projects-timewise-writeup, .projects-moviesnet-writeup, .projects-minesweeper-writeup, .projects-school-writeup, .projects-poker-writeup {
+        top: 100px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-style: italic;
+        text-decoration: none solid black;
+        word-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    /*
+
+    END
+    OF
+    PROJECTS
+    (MAX-WIDTH:1900PX) & (MIN-WIDTH:1200PX)
+
+    */
+
+
+    /*
+
+    EXPERIENCE
+    (MAX-WIDTH:1900PX) & (MIN-WIDTH:1200PX)
+
+    */
+
+    .experience-container {
+        position: relative;
+        height: 110vh;
+        width: 100%;
+        background-color: var(--resume-design5);
+    }
+
+    .experience-title {
+        display: inline;
+        position: relative;
+        left: 80px;
+        top: 30px;
+        margin-top: 150px;
+        font-size: 60px;
+        word-spacing: 4px;
+        font-family: 'Caveat', cursive;
+        letter-spacing: 5px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none solid black;;
+        /* font-style: italic; */
+        font-variant: small-caps;
+    }
+
+    .experience-logo {
+        position: relative;
+        top: 30px;
+        height: 40px;
+        width: auto;
+        left: -240px;
+    }
+
+    .experience-heading-container {
+        height: 8vh;
+        width: 100%;
+    }
+
+
+    /*
+
+    END
+    OF
+    EXPERIENCE
+    (MAX-WIDTH:1900PX) & (MIN-WIDTH:1200PX)
+
+    */
+
+    /*
+
+    CONTACT
+    (MAX-WIDTH:1900PX) & (MIN-WIDTH:1200PX)
+
+    */
+
+    .contact-container {
+        position: relative;
+        height: 30vh;
+        width: 100%;
+        color: white;
+        background: black;
+    }
+
+    .contact-title {
+        display: inline;
+        position: relative;
+        left: 80px;
+        top: 10px;
+        font-size: 60px;
+        word-spacing: 4px;
+        font-family: 'Caveat', cursive;
+        letter-spacing: 5px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none solid black;;
+        /* font-style: italic; */
+        font-variant: small-caps;
+    }
+
+    .contact-logo {
+        position: relative;
+        top: 15px;
+        left: -170px;
+    }
+
+    /*
+
+    END
+    OF
+    CONTACT
+    STYLING
+
+    */
+}
+
+@media screen and (max-width: 1030px) {
+    .navbar-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /*
+    
+    NAVBAR
+    (MAX-WIDTH:770PX)
+    
+    */
+
+    .navbar-links {
+        position: absolute;
+        z-index: 6;
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        display: flex;
+        color: grey;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .navbar-links li {
+        opacity: 0;
+        color: black;
+    }
+
+    .navbar-links a {
+        color: black;
+    }
+
+    .navbar-lines-container {
+        display: block;
+    }
+
+    .btn-1, .btn-2, .btn-3, .btn-4, .btn-5 {
+        color: black;
+        padding: 17px 40px;
+        border-radius: 50px;
+        border: 0;
+        box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+        letter-spacing: 1.5px;
+        font-size: 15px;
+        transition: all .5s ease;
+    }
+    
+    .btn-1:hover, .btn-2:hover, .btn-3:hover, .btn-4:hover, .btn-5:hover {
+        letter-spacing: 3px;
+        background-color: var(--red-design);
+        color: black;
+        box-shadow: var(--purple-design) 0px 7px 29px 0px;
+    }
+    
+    .btn-1:active, .btn-2:active, .btn-3:active, .btn-4:active, .btn-5:active {
+        letter-spacing: 3px;
+        background-color: var(--red-design);
+        color: black;
+        box-shadow: var(--purple-design) 0px 0px 0px 0px;
+        transform: translateY(10px);
+        transition: 100ms;
+    }
+
+    /*
+    
+    END
+    OF
+    NAVBAR
+    (MAX-WIDTH:770PX)
+    
+    */
+
+    /*
+    
+    OBJECTIVE
+    (MAX-WIDTH:770PX)
+    
+    */
+
+    .objective-container {
+        width: 100%;
+        min-height: 30vh;
+        position: relative;
+    }
+
+    .objective-title {
+        display: inline;
+        position: relative;
+        left: 40px;
+        top: -60px;
+        margin-top: 100px;
+        font-size: 40px;
+        word-spacing: 4px;
+        font-family: 'Caveat', cursive;
+        letter-spacing: 5px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none solid black;
+        font-variant: small-caps;
+    }
+    
+    .objective-logo {
+        position: relative;
+        top: -57px;
+        left: -165px;
+        height: 30px;
+        width: auto;
+    }
+
+    .objective-writing {
+        position: relative;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 15px;
+        letter-spacing: 2.5px;
+        word-spacing: 4px;
+        color: black;
+        font-weight: 400;
+        text-decoration: none solid black;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -40px;
+    }
+
+    /*
+    
+    END
+    OF
+    OBJECTIVE
+    (MAX-WIDTH:770PX)
+    
+    */
+
+    /*
+    
+    EDUCATION
+    (MAX-WIDTH:770PX)
+    
+    */
+
+    .education-container {
+        height: 200vh;
+        width: 100%;
+        background-color: var(--resume-design2);
+        position: relative;
+    }
+
+    .education-title {
+        display: inline;
+        position: relative;
+        left: 40px;
+        top: 10px;
+        margin-top: 150px;
+        font-size: 40px;
+        word-spacing: 4px;
+        font-family: 'Caveat', cursive;
+        letter-spacing: 5px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none solid black;;
+        font-variant: small-caps;
+    }
+    
+    .education-logo {
+        position: relative;
+        top: 10px;
+        left: -175px;
+        height: 25px;
+        width: auto;
+    }
+
+    .ryerson-left {
+        background-color: var(--resume-design2);
+        color: black;
+        width: 100%;
+        float: left;
+        height: 50vh;
+    }
+
+
+    .ryerson-title {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        letter-spacing: 3px;
+        word-spacing: 4px;
+    }
+
+    .ryerson-level {
+        font-style: italic;
+        opacity: 0.6;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .ryerson-writing {
+        font-size: 15px;
+        top: 100px;
+        margin-top: 20px;
+        letter-spacing: 2.5px;
+        font-weight: 400;
+        font-style: italic;
+        text-decoration: none solid black;
+        word-spacing: 4px;
+    }
+
+    .ryerson-subheading {
+        margin-left: 10px;
+        margin-top: 25px;
+        margin-right: 10px;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 2.5px;
+        word-spacing: 4px;
+        font-style: normal;
+        font-variant: normal;
+    }
+
+    .ryerson-right {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        float: right;
+        margin-top: 0;
+    }
+
+    .ryerson-hashtag {
+        position: relative;
+        left: 50%;
+        opacity: 0.7;
+        color: var(--hashtag-color);
+        font-size: 40px;
+    }
+
+
+    .pope-left {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        float: left;
+        margin-top: 0;
+    }
+
+    .pope-hashtag {
+        position: relative;
+        opacity: 0.7;
+        color: var(--hashtag-color);
+        font-size: 40px;
+    }
+
+    .pope-right {
+        width: 100%;
+        float: right;
+        height: 50vh;
+    }
+    
+    .pope-title {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    
+    .pope-level {
+        font-style: italic;
+        opacity: 0.6;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    
+    .pope-subheading {
+        margin-left: 10px;
+        margin-top: 25px;
+        margin-right: 10px;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 2.5px;
+        word-spacing: 4px;
+    }
+    
+    .pope-writing {
+        font-size: 15px;
+        top: 100px;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-style: italic;
+        text-decoration: none solid black;
+        word-spacing: 2px;
+    }
+
+    /*
+    
+    END
+    OF
+    EDUCATION
+    (MAX-WIDTH:770PX)
+    
+    */
+
+    /*
+    
+    SKILLS
+    (MAX-WIDTH:770PX)
+    
+    */
+    
+    .skills-container {
+        position: relative;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .skills-title {
+        display: inline;
+        position: relative;
+        left: 40px;
+        top: 10px;
+        margin-top: 150px;
+        font-size: 40px;
+        word-spacing: 4px;
+        font-family: 'Caveat', cursive;
+        letter-spacing: 5px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none solid black;;
+        font-variant: small-caps;
+    }
+
+    .skills-logo {
+        position: relative;
+        height: 30px;
+        width: auto;
+        top: 10px;
+        left: -105px;
+    }   
+
+    .skills-title1, .skills-title2, .skills-title3 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        letter-spacing: 3px;
+        word-spacing: 4px;
+    }
+
+    .skills-writing {
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        top: 100px;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-style: italic;
+        text-decoration: none solid black;
+        word-spacing: 2px;
+    }
+
+    /*
+    
+    END
+    OF
+    SKILLS
+    (MAX-WIDTH)
+    
+    */
+
+    /*
+    
+    PROJECTS
+    (MAX-WIDTH:770PX)
+    
+    */
+
+    .projects-container {
+        position: relative;
+        width: 100%;
+        height: 85vh;
+    }
+
+    .projects-heading-container {
+        height: 8vh;
+    }
+
+    .projects-title {
+        display: inline;
+        position: relative;
+        left: 40px;
+        top: 10px;
+        margin-top: 150px;
+        font-size: 40px;
+        word-spacing: 4px;
+        font-family: 'Caveat', cursive;
+        letter-spacing: 5px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none solid black;;
+        font-variant: small-caps;
+    }
+
+    .projects-logo {
+        position: relative;
+        height: 30px;
+        width: auto;
+        top: 10px;
+        left: -145px;
+    }
+
+    .projects-timewise-title, .projects-moviesnet-title, .projects-minesweeper-title, .projects-school-title, .projects-poker-title {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        letter-spacing: 3px;
+        word-spacing: 4px;
+        display: inline-block;
+    }
+
+    .timewise-link, .moviesnet-link, .minesweeper-link, .school-link, .poker-link {
+        height: 20px;
+        width: auto;
+        bottom: 15px;
+    }
+    
+    .projects-timewise-writeup, .projects-moviesnet-writeup, .projects-minesweeper-writeup, .projects-school-writeup, .projects-poker-writeup {
+        font-size: 15px;
+        top: 100px;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-style: italic;
+        text-decoration: none solid black;
+        word-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    /*
+    
+    END
+    OF
+    PROJECTS
+    (MAX-WIDTH:770PX)
+
+    */
+
+    /*
+    
+    EXPERIENCE
+    (MAX-WIDTH:770PX)
+    
+    */
+
+    .experience-container {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-color: var(--resume-design5);
+    }
+
+    .experience-heading-container {
+        height: 0;
+        position: relative;
+        top: 20px;
+    }
+
+    .experience-title {
+        display: inline;
+        position: relative;
+        left: 40px;
+        top: 0px;
+        margin-top: 100px;
+        font-size: 40px;
+        word-spacing: 4px;
+        letter-spacing: 5px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none solid black;
+        font-variant: small-caps;
+    }
+    
+    .experience-logo {
+        position: relative;
+        top: -0px;
+        left: -195px;
+        height: 25px;
+        width: auto;
+    }
+
+    .timeline-content .date {
+        color: white;
+    }
+
+
+    /*
+    
+    END
+    OF
+    EXPERIENCE
+    (MAX-WIDTH:770PX)
+    
+    */
+
+    /*
+    
+    CONTACT
+    (MAX-WIDTH:770PX)
+    
+    */
+
+    .contact-container {
+        position: relative;
+        height: 30vh;
+        width: 100%;
+    }
+
+    .contact-heading-container {
+        height: 10vh;
+    }
+
+    .contact-title {
+        display: inline;
+        position: relative;
+        left: 40px;
+        top: 10px;
+        margin-top: 150px;
+        font-size: 40px;
+        word-spacing: 4px;
+        letter-spacing: 5px;
+        font-weight: bold;
+        text-decoration: none solid black;;
+        font-variant: small-caps;
+    }
+
+    .contact-logo {
+        position: relative;
+        height: 30px;
+        width: auto;
+        top: 10px;
+        left: -130px;
+    }
+
+    /*
+    
+    END
+    OF
+    CONTACT
+    (MAX-WIDTH:770PX)
+    
+    */
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/*
+
+END
+OF
+RESPONSIVENESS
+
+*/
